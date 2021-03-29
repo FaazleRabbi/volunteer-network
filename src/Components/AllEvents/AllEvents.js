@@ -4,7 +4,7 @@ import EventCard from "../EventCard/EventCard";
 const AllEvents = () => {
   const [allEvents, setAllEvents] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/allEvents")
+    fetch("https://mighty-meadow-00530.herokuapp.com/allEvents")
       .then((res) => res.json())
       .then((data) => setAllEvents(data));
   }, []);
